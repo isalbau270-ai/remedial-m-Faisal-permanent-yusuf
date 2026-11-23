@@ -1,0 +1,40 @@
+:root{--tua:#0B4F5C;--air:#1B9BAA;--muda:#E3F2F5;--teks:#12303A;--abu:#5B7580;--garis:#C9DDE2;--merah:#B3261E;--hijau:#1E7B45}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",Arial,sans-serif;color:var(--teks);background:#F3F8F9;line-height:1.5}
+.wrap{max-width:860px;margin:0 auto;padding:16px}
+header.bar{background:var(--tua);color:#fff}
+header.bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+header.bar h1{font-size:1.1rem;margin:0}
+header.bar a{color:#fff}
+.card{background:#fff;border:1px solid var(--garis);border-radius:8px;padding:16px;margin:16px 0}
+h2{font-size:1.05rem;margin:0 0 12px}
+label{display:block;font-weight:600;margin:10px 0 4px}
+input,select{width:100%;padding:9px 10px;border:1px solid var(--garis);border-radius:6px;font:inherit}
+input:focus,select:focus,.btn:focus-visible{outline:2px solid var(--air);outline-offset:1px}
+.btn{display:inline-block;background:var(--tua);color:#fff;border:0;border-radius:6px;padding:9px 16px;font:inherit;cursor:pointer;text-decoration:none}
+.btn.kecil{padding:5px 10px;font-size:.9rem}
+.btn.abu{background:#fff;color:var(--tua);border:1px solid var(--tua)}
+.btn.merah{background:var(--merah)}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--garis)}
+th{background:var(--muda)}
+.scroll{overflow-x:auto}
+.pesan{padding:10px 12px;border-radius:6px;margin:12px 0}
+.ok{background:#E4F5EA;color:var(--hijau)}
+.gagal{background:#FBE9E7;color:var(--merah)}
+.login{max-width:380px;margin:12vh auto;padding:0 16px}
+.total{font-size:1.2rem;font-weight:700;color:var(--tua)}
+.aksi{white-space:nowrap}
+.bukti{max-width:420px;margin:24px auto}
+.bukti dl{display:grid;grid-template-columns:130px 1fr;gap:6px 12px;margin:0 0 16px}
+.bukti dt{color:var(--abu)}
+.bukti dd{margin:0}
+@media print{header.bar,.noprint{display:none}body{background:#fff}.card{border:1px solid #000}}
+nav.menu{background:#fff;border-bottom:1px solid var(--garis)}
+nav.menu .wrap{display:flex;gap:4px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+nav.menu a{padding:7px 12px;border-radius:6px;color:var(--tua);text-decoration:none}
+nav.menu a.aktif{background:var(--muda);font-weight:600}
+.ringkas{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.ringkas .card{margin:0}
+.ringkas .angka{font-size:1.5rem;font-weight:700;color:var(--tua)}
+@media print{nav.menu{display:none}}
